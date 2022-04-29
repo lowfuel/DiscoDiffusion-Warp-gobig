@@ -7,7 +7,7 @@ This version improves video init. You can now generate optical flow maps from in
 - warp init frames for consistent style 
 - warp processed frames for less noise in final video
 
-#Going Big
+# Going Big
 Tick the box for go_big in section 3. 
 You also need to know:
 - n_batches needs to be 1
