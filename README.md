@@ -1,4 +1,4 @@
-# Disco Diffusion v5.2 - Warp
+# Disco Diffusion v5.2 - Warp - GO BIG
 
 [![Disco Diffusion v5.2 - Warp](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sxela/DiscoDiffusion-Warp/blob/main/Disco_Diffusion_v5_2_Warp.ipynb)
 
@@ -6,6 +6,14 @@
 This version improves video init. You can now generate optical flow maps from input videos, and use those to:
 - warp init frames for consistent style 
 - warp processed frames for less noise in final video
+
+#Going Big
+Tick the box for go_big in section 3. 
+You also need to know:
+- n_batches needs to be 1
+- animation mode should be none
+- your output won't display, but will be saved - look for the file with "final" in the name and a time stamp (the original is also saved)
+
 
 ##Init warping
 The feature works like this: we take the 1st frame, diffuse it as usual as an image input with fixed skip steps. Then we warp in with its flow map into the 2nd frame and blend it with the original raw video 2nd frame. This way we get the style from heavily stylized 1st frame (warped accordingly) and content from 2nd frame (to reduce warping artifacts and prevent overexposure)
