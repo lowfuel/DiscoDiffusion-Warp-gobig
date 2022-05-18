@@ -19,7 +19,8 @@ You also need to know:
 The feature works like this: we take the 1st frame, diffuse it as usual as an image input with fixed skip steps. Then we warp in with its flow map into the 2nd frame and blend it with the original raw video 2nd frame. This way we get the style from heavily stylized 1st frame (warped accordingly) and content from 2nd frame (to reduce warping artifacts and prevent overexposure)
 
 # Changelog
-
+### 17.05.2022:
+- Go Big mode, symmetry, randomizers
 ### 22.04.2022:
 - Add ViT-L/14@336px
 ### 21.04.2022: 
